@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Закупки топлива</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/table.css" type="text/css"/>
+</head>
+<body>
+    <div id="wrapper">
+        <header><img src="images/header.png"></header>
+        <nav>
+            <ul>
+                <li><a href="branch.html">Филиалы</a></li>
+                <li><a href="fuel_provider.html">Поставщики топлива</a></li>
+                <li><a href="fuel_purchase.html">Закупки топлива</a></li>
+                <li><a href="index.html">Выйти</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Закупки топлива</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Поставщик</th>
+                        <th>Объем</th>
+                        <th>Дата</th>
+                        <th>Стоимость (за 1л)</th>
+                        <th>Филиал</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-rows">
+                </tbody>
+            </table>
+            <p>Всего филиалов: <label id="count-rows"></label></p>
+        </div>
+        <footer>© 2021 Copyright HelicopterTaxi</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/fuel_purchase.js" defer></script>
+</body>
+</html>
